@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<% include partials/head.ejs %>
+<style>
+#img1{
+  width: 95%;
+}
+#img2{
+  width: 72%;
+}
+@media only screen and (max-width: 750px) {
+  #img2{
+    width: 95%;
+  }
+}
+</style>
+
+<body>
+
+<% include partials/header.ejs %>
+<% include partials/menu.ejs %>
+
+<div class="main">
+<div class = "content">
+<br>
+<h1>History: U.S.</h1>
+<br>
+<p><img src="/images/papert.jpg" alt="Papert" width="250"/></p>
+<p class = "caption"><a href = "http://news.mit.edu/2016/seymour-papert-pioneer-of-constructionist-learning-dies-0801" target="_blank">Seymour Papert (Hetherington 1988)</a></p>
+<p>
+In the U.S., <a href = "https://www.media.mit.edu/people/in-memory/papert" target="_blank">Seymour Papert</a> led one of the earliest movements of computer education for children. He and others developed <a href = "http://el.media.mit.edu/logo-foundation/what_is_logo/history.html" target="_blank">LOGO</a>, a programming language for children that came out in 1967, when personal computers were becoming cheaper and more available in markets. The initial popularity of LOGO coincided with the general dissatisfaction with the nation's education at that time. In 1983 President Reagan's National Commission on Excellence in Education submitted the report <i>A Nation at Risk</i>. "This time, personal computers were the white knights dispatched to rescue the flailing students from academic failure. In response to the report, funding for classroom computers became available, and schools began to buy computers for teachers to use in their classrooms." <a href="/bib/?entry=ferster">(Ferster 2014)</a>
+</p>
+<h2 class = "readMore" id = "readMore1">Read More &nbsp &nbsp &nbsp<img class="downArrow" src = '/images/arrows.png'/></h2>
+<div class = "moreText" id = "text1">
+<p>
+Papert mainly saw computers and LOGO as tools for advancing his education philosophy of constructionism, which supports a different learning style: programming allows students to tinker and explore more creatively rather than always receiving direct instructions, and the process of tinkering and exploring could help students to develop higher level thinking <a href="/bib/?entry=papert1991">(Papert & Harel 1991)</a>. Constructionism reached its heyday in the early 1980s, yet criticisms quickly appeared. Some studies showed that LOGO did not help much to develop children's higher order thinking, and thus "LOGO promised more than it delivered" <a href="/bib/?entry=pea">(Pea & Kurland 1984)</a>. Papert responded that the scientific control group method could not be used to assess LOGO; whether LOGO was valuable or not depended on how it was used, and the whole school culture must be taken into consideration (Papert 1987). While the situation could be complex, tensions with assessments still contributed to the decline of LOGO.
+</p>
+<p>
+After the 1980s, students' interest in computer science fluctuated greatly. The number of newly declared Computer Science/Computer Engineering undergraduate majors peaked at 2000, yet the number dropped dramatically after the "dot com bust" happened that year. The enrollment number slowly rose back after about seven years, and is now skyrocketing again <a href="/bib/?entry=zweben">(Zweben & Bizot 2016)</a>.
+</p>
+<p><img src="/images/craSurvey.png" alt="survey results" id = "img1"/></p>
+<p class = "caption"><a href="/bib/?entry=zweben">Newly Declared CS/CE Undergraduate Majors (Zweben & Bizot 2016)</a></p>
+<p>
+When the enrollment number was low, government, industry leaders, the academia and the non-profits were especially eager to expose more high school students to computer science in hope that more students would go into the field later. They saw the IT industry as a fast-growing, profitable, and important industry, and more and more jobs in other sectors require programming skills as well, yet there were not enough CS majors to fill in the job openings.
+</p>
+<p>
+Thus in 2005 President Bush's Information Technology Advisory Committee submitted the report <a href = "https://www.nitrd.gov/pitac/reports/20050609_computational/computational.pdf" target="_blank"><i>Computational Science: Ensuring America's Competitiveness</i></a>, advocating CS education. Coincidentally, in 2006 CS professor <a href="https://www.microsoft.com/en-us/research/people/wing/" target="_blank">Jeannette Wing</a>'s succinct yet powerful three-page article <i>Computational Thinking</i> gave out a rallying call, "Rather than bemoan the decline of interest in computer science or the decline in funding for research in computer science, we should look to inspire the public's interest in the intellectual adventure of the field." <a href="/bib/?entry=wing">(Wing 2006)</a> She advocated the education of computational thinking—the higher level thinking patterns typical in CS, such as abstraction, optimization, etc. Wing's grand vision that computational thinking should be for "everyone, everywhere" <a href="/bib/?entry=wing">(Wing 2006)</a> resonated with many educators, starting a new round of research and movement to bring CS and computational thinking into K-12.
+</p>
+<p><img src="images/wing.jpg" alt="Wing" id = "img2"/></p>
+<p class = "caption"><a href = "https://www.h-its.org/sab-members/about-jeannette-wing/" target="_blank">Jeanette Wing Envisioning Computational Thinking</a></p>
+</div>
+<h2 class = "showLess" id = "showLess1">Show Less &nbsp &nbsp &nbsp<img class="upArrow" src = '/images/arrows.png'/></h2>
+<br>
+
+<br>
+<h1>Across the Globe</h1>
+<br>
+<a class = "next" href="/history_chn"><h2>History: China &nbsp &nbsp &nbsp &nbsp<img class="arrow" src = '/images/arrows.png'/></h2>
+<br>
+<p>
+China's movement of educating children and teenagers about computers started in the mid 1980s, ignited by a rallying call from the former prime minister.
+</p></a>
+<br>
+<h1>Next</h1>
+<br>
+<a class = "next" href="/current_us"><h2>Current: U.S. &nbsp &nbsp &nbsp &nbsp<img class="arrow" src = '/images/arrows.png'/></h2>
+<br>
+<p>
+Why teach CS to high school students? Currently in the U.S., government, industry, academia, and non-profits each carry a slightly different motivation.
+</p></a>
+<br>
+
+</div>
+</div>
+
+
+<% include partials/footer.ejs %>
+
+
+<script src = "partials/jquery-3.2.1.js"></script>
+<script src = "partials/script.js"></script>
+</body>
+</html>

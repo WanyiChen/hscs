@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<% include partials/head.ejs %>
+<style>
+#img1, #img2{
+  width: 72%;
+}
+@media only screen and (max-width: 750px) {
+  #img1, #img2{
+    width: 95%;
+  }
+}
+</style>
+
+<body>
+<% include partials/header.ejs %>
+<% include partials/menu.ejs %>
+
+<div class="main">
+<div class = "content">
+<br>
+<h1>History: China</h1>
+<br>
+<p><img src="images/deng.jpg" alt="Deng" id = "img1"/></p>
+<p class = "caption"><a href = "http://m.chinadaily.com.cn/cn/2014-08/22/content_18467391.htm" target="_blank">Deng Xiaoping Overseeing Computer Education</a></p>
+<p>
+China's movement of educating children and teenagers about computers started in the mid 1980s, ignited by a rallying call from the former prime minister. " 'The popularization of knowledge of computers should begin from children', said in 1984 the former leader Deng Xiaoping, General designer of China’s reform and opening policy." <a href="/bib/?entry=wang">(Wang, Yin & Li 2007)</a> The Chinese National Olympiad in Informatics, an impactful competition for middle school and high school students, was founded in that year, and still continues today.</p>
+<h2 class = "readMore" id = "readMore1">Read More &nbsp &nbsp &nbsp<img class="downArrow" src = '/images/arrows.png'/></h2>
+<div class = "moreText" id = "text1">
+<p>
+Recovering from the ten-year Cultural Revolution, China had looked up to developed western countries since the establishment of reform and opening policies in 1978, and the country was especially eager to adapt more modern and advanced technologies, one of which was computers. Thus computer education quickly became a movement highly supported by the government. As described by Nan Guonong, one of the pioneers in computer education in China, the movement was characterized by "education for computers" <a href="/bib/?entry=nan">(Nan 2001)</a>, meaning that introducing more computers was an end goal in itself, and to introduce more computers people needed to start educating young children about computers.
+</p>
+<p><img src="images/nan.jpg" alt="Nan" id = "img2"/></p>
+<p class = "caption"><a href = "http://www.nwnu.edu.cn/Article.do?id=7484" target="_blank">Nan Guonong Speaking About Computer and Education</a></p>
+<p>
+However, over time the role of computers in education gradually shifted. China gradually realized that simply introducing more computers was not enough; instead, a large-scale reform of the whole education system was needed. Nan observed that starting from the mid 1990s, the characteristic of computer education became "computers for education" <a href="/bib/?entry=nan">(Nan 2001)</a>, meaning that education itself became a goal, and computer was a tool for providing better education. "As pointed out by Mr. Deng Xiaoping, to modernize the country, science/technology is the key, and education is the foundation." <a href="/bib/?entry=ccc">(The Central Committee of the Communist Party of China & The State Council 1993)</a>
+</p>
+<p>
+Recognizing the need of better education, in 1993 the government established the Outline of China's Education Reform and Development, which stressed the importance of moving move from more exam-oriented education to more quality-oriented education. As pointed out by the Outline, a reform advocating quality-oriented education was inevitable in order to "turn a burdensome population into an advantage in human capital" to solve various social problems at that time. <a href="/bib/?entry=ccc">(The Central Committee of the Communist Party of China & The State Council 1993)</a> Thus in high schools, information technology education was rearticulated as part of quality-oriented education. The contemporary information technology curriculum was established in 2003, and the goal of the curriculum was to enhance students’ information literacy, because "information literacy is indispensable to a qualified citizen in the information age." <a href="/bib/?entry=edepart2003">(The Education Department 2003)</a> Since then, information literacy has been articulated with qualified citizenship.
+</p>
+</div>
+<h2 class = "showLess" id = "showLess1">Show Less &nbsp &nbsp &nbsp<img class="upArrow" src = '/images/arrows.png'/></h2>
+<br>
+
+<br>
+<h1>Accross the Globe</h1>
+<br>
+<a class = "next" href="/history_us"><h2>History: U.S. &nbsp &nbsp &nbsp &nbsp<img class="arrow" src = '/images/arrows.png'/></h2>
+<br>
+<p>
+In the U.S., Seymour Papert led one of the earliest movements of computer education for children.
+</p></a>
+<br>
+<h1>Next</h1>
+<br>
+<a class = "next" href="/current_chn"><h2>Current: China &nbsp &nbsp &nbsp &nbsp<img class="arrow" src = '/images/arrows.png'/></h2>
+<br>
+<p>
+China has a national curriculum standard, allowing only controlled degrees of regional variations. In high schools, the IT curriculum has a "1+5" structure.
+</p></a>
+<br>
+
+</div>
+</div>
+
+<% include partials/footer.ejs %>
+
+<script src = "partials/jquery-3.2.1.js"></script>
+<script src = "partials/script.js"></script>
+</body>
+</html>

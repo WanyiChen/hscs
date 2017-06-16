@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<% include partials/head.ejs %>
+
+<style>
+#img1{
+  width: 95%;
+}
+#img2{
+  width: 65%;
+}
+@media only screen and (max-width: 750px) {
+  #img2{
+    width: 90%;
+  }
+}
+</style>
+
+<body>
+<% include partials/header.ejs %>
+<% include partials/menu.ejs %>
+
+<div class="main">
+<div class = "content">
+<br>
+<h1>Current Situation: China</h1>
+<br>
+<h2>The Information Technology (IT) curriculum</h2>
+<br>
+<p>
+Unlike the U.S., where each state or even each school district can have its own curriculum standard, China has a national curriculum standard, allowing only controlled degrees of regional variations. In high schools, the IT curriculum has a “1+5” structure: every student is required to take the course Foundations of Information Technology and choose one from the five electives, which are Application of Internet Technology, Application of Multimedia Technology, Introduction to Artificial Intelligence, Algorithm and Program Design, and Data Administration Technology.
+</p>
+<h2 class = "readMore" id = "readMore1">Read More &nbsp &nbsp &nbsp<img class="downArrow" src = '/images/arrows.png'/></h2>
+<div class = "moreText" id = "text1">
+<p>
+However, there is a lot of criticism of the curriculum. Some of the major critiques are about the curriculum standard itself. First of all, the curriculum standard hasn’t been updated since 2003. When the curriculum was first developed, few families owned computers, so many students came to high schools knowing little about computers, and consequently the information technology curriculum assumed little background in computing. Yet over the last ten years circumstances changed tremendously: many students grew up immersed in technologies (known as “digital natives”), thus they have already acquired a lot of prior knowledge by the time they take the required course Foundations of Information Technology. Moreover, primary schools and middle schools began teaching information technology as well. In 2003, primary school and middle school’s IT curriculum standard wasn’t established, thus it was hard to establish a high school IT curriculum that connects and builds upon what were taught before high school <a href="/bib/?entry=li">(Li, Zhu & Dong 2003)</a>. Thus in a nationwide survey in 2013, many high school IT teachers estimated that Foundations of Information Technology has a lot of overlaps with the middle schools IT curriculum <a href="/bib/?entry=xiao2014">(Xiao, Guo, Fan & Huang 2014)</a>. Having to learn what they have already known, students may quickly lose interest in IT.
+</p>
+<p>
+Meanwhile, many other criticisms are about how the curriculum standard is actually carried out by high schools. In short, the IT curriculum is a marginalized curriculum, and the graduation requirements play a large role in marginalizing it. Although the IT curriculum is part of the High School Graduation Examination, which determines whether students can get their high school diploma, it is not part of the National College Entrance Examination (NCEE), which determines whether and where students can go to college. The former is a lot easier compared to the latter, because students only need to pass the former in order to graduate, while they need to score as high as possible in the latter in order to be admitted by dream colleges. Thus, when schools have limited resources, they tend to pour the resources onto curriculums tested by the NCEE. Partly because the goal of the current IT curriculum is to enhance students’ information literacy—to make them qualified citizens of the information age, how well the students learnt the IT curriculum is not intended to be a college selection criteria, thus it can be hard to incorporate the IT curriculum into the NCEE, unless the curriculum standard updates and make tremendous changes. Indeed, the majority of the IT teachers surveyed did not eagerly wish the current IT curriculum to be incorporated into the NCEE <a href="/bib/?entry=xiao2014">(Xiao, Guo, Fan & Huang 2014)</a>.
+</p>
+<p>
+Struggling with limited resources, many high schools cannot offer all five electives of the IT curriculum, leaving students with little or no choice. Moreover, the five electives are being offered highly unevenly. Application of Internet Technology and Application of Multimedia Technology are being offered the most. Compared to the other three electives, these two are easier because they are mainly focused on teaching students how to use the applications, while the other three require students to have some deeper understandings of the underlying theories <a href="/bib/?entry=xiao2014">(Xiao, Guo, Fan & Huang 2014)</a>. However, students have expressed considerable interests in the other three as well, although most of the time they do not have a chance to take these courses. Especially in the case of Introduction to Artificial Intelligence, a gap between student interest and actual enrollment clearly exists:
+</p>
+<p><img src="images/fiveElectives.png" alt="five electives data" id = "img1"/></p>
+<p class = "caption"><a href="/bib/?entry=xiao2014">Student interest and actual enrollment in the five electives, actual enrollment estimated by the teachers (Data source: Xiao, Guo, Fan & Huang 2014)</a></p>
+<p>
+With limited resources high schools found it hard to recruit high quality IT teachers as well. Especially in the beginning years, many teachers did not major in computer science or related fields, but took up the role of IT teachers upon requests by schools <a href="/bib/?entry=zhu">(Zhu & Li 2005)</a>. Moreover, many IT teachers had limited understanding of information literacy, overlooking the humanistic value of information literacy and making the courses overly technical. By only teaching “whatever [technical skill] that is useful”, students’ emotional development, attitude formation, and thinking process were largely ignored <a href="/bib/?entry=liu">(Liu & Dong 2012)</a>. The High School Graduation Examination further worsens the problem. IT teachers had to prepare students for the exam, and the exam was mainly testing basic knowledge, concepts, and skills, hardly incorporating humanistic values of information literacy as described by the curriculum standard. Thus, the majority of the teachers (67%) thought that the High School Graduation Examination does not help to realize the goal of the IT curriculum <a href="/bib/?entry=xiao2014">(Xiao, Guo, Fan & Huang 2014)</a>.
+</p>
+<p>
+Realizing these problems, the researchers have offered many suggestions to improve the IT curriculum, such as updating the curriculum standard to take students’ prior knowledge into consideration, developing assessment criteria that better reflect the curriculum’s goal, and recruiting/training high quality teachers, etc. <a href="/bib/?entry=liu">(Liu & Dong 2012;</a> <a href="/bib/?entry=xiao2014">Xiao, Guo, Fan & Huang 2014)</a>. While these are highly valuable suggestions, they may take a long time to implement, especially given that in the current Chinese education system, any change in the curriculum standard will affect the whole nation.
+</p>
+</div>
+<h2 class = "showLess" id = "showLess1">Show Less &nbsp &nbsp &nbsp<img class="upArrow" src = '/images/arrows.png'/></h2>
+
+<br>
+<h2>Other Efforts</h2>
+<br>
+<p>
+In addition to the IT curriculum, there are other notable efforts to foster high school CS education as well. The contemporary national standard of the math curriculum, updated in 2003, has taken the integrated curriculum approach: in a mandatory math course, there is a unit called “Introduction to Algorithms”, introducing flow charts, pseudo codes, simple BASIC commands, etc. The unit does not require the use of computers, and current math teachers teach the unit, thus the integrated curriculum utilizes existing resources well. Moreover, the unit is part of NCEE, although usually a relatively easy part <a href="/bib/?entry=xu">(Xu 2013)</a>.
+</p>
+<h2 class = "readMore" id = "readMore2">Read More &nbsp &nbsp &nbsp<img class="downArrow" src = '/images/arrows.png'/></h2>
+<div class = "moreText" id = "text2">
+<p>
+There are efforts to integrate this unit with the IT elective Algorithm and Program Design, too, since both have a focus on algorithms. Some researchers think that both the math course and the IT course can benefit from the integration: for math, some math teachers are not very familiar with CS algorithms, and learning the material just on pen and paper can be boring. Yet due to high pressures to prepare students for the NCEE, math teachers usually do not have time to let the students actually program and test their algorithms on computers. For IT, as a marginalized curriculum, some students don’t take it very seriously, so it may use math, the “mainstream curriculum”, to elevate its status <a href="/bib/?entry=xu">(Xu 2013)</a>. In an experiment, students take these two courses at the same time, and program some exercises from the math course in IT class time. Results showed that both the student’s interest and grade improved in comparison to the control group, although it remains unclear whether the results are replicable <a href="/bib/?entry=xu">(Xu 2013)</a>.
+</p>
+<p>
+<a href = "http://www.noi.cn" target="_blank">Chinese National Olympiad in Informatics (CNOI)</a> is another important effort. Organized by the <a href = "http://www.ccf.org.cn" target="_blank">Chinese Computer Federation (CCF)</a>, CNOI seeks “to popularize CS knowledge to teenagers in secondary schools, to provide motivation and a new way of thinking for the information technology curriculum, to provide opportunities for talented students to communicate with and learn from each other, and to cultivate and select CS talents.” <a href="/bib/?entry=ccf2016">(CCF 2016)</a> Unlike the IT curriculum which seeks to promote general information literacy, CNOI seeks to “cultivate and select CS talents”, thus it can be used as a selection criteria. For a long time it was closely linked to college admission: students who won top prizes got bonus points in NCEE—an exam in which every point could make a big difference, and the very top winners got guaranteed admission to good colleges.
+</p>
+<p>
+Largely due to advantages in college admissions, CNOI attracts a lot of participants. In 2014, more than 60,000 middle and high school students participated in provincial level contests. However, the breakdown of the data showed that richer provinces generally had more participants and higher average scores <a href="/bib/?entry=ccf2014">(CCF 2014)</a>. Preparing students for CNOI requires a lot of resources, and usually only “key schools” in rich provinces can afford to prepare students adequately, hiring specialized teachers to train the students during weekends and holidays. Thus, it is doubtful whether CNOI attains part of its original goal of popularizing CS knowledge, because there are many barriers to participate, and students who participate may have high levels of interest in CS already. In this light, it is hard for CNOI to reach out to students who are less likely to receive quality CS education in high school.
+</p>
+<p>
+Partly because of the realization that CNOI had strayed away from its original goals, in 2014 the link between CNOI and college admission was cut: students can no longer get bonus points in NCEE because of prizes won in CNOI. Notably, the same policy change was simultaneously made for all other national science Olympiads (chemistry, biology, physics, astronomy) as well. The policy change fits into the larger picture of the ongoing struggle between exam-oriented education and quality-oriented education: should the students devote more time to explore their interests and develop various aspects of their “quality”, rather than spending all their free time preparing for the largely exam-oriented CNOI?
+</p>
+<p>
+Lastly, in recent years more and more high school students are choosing to study abroad in college. Instead of taking the NCEE, they look at foreign (mostly western) colleges’ admission criteria and try to prepare themselves accordingly. With new demands from these students, some private “international schools” and public schools in cooperation with private organizations began offering AP courses such as AP CS. While most students who study abroad are at least of the middle class, the number is growing fast. Moreover, the U.S. AP course system may provide a new way of thinking for Chinese education, for currently China does not have any large scale system that allow high school students to take college level courses.
+</p>
+</div>
+<h2 class = "showLess" id = "showLess2">Show Less &nbsp &nbsp &nbsp<img class="upArrow" src = '/images/arrows.png'/></h2>
+
+<br>
+<h2>Going to Colleges</h2>
+<br>
+<p>
+If they do not repeat a grade, students spend three years in high school. By the end of the first year, they are asked to choose between two tracks: the math and sciences track, or the humanities and social sciences track. Their choice will determine their following two years’ curriculum, leading up to different versions of the NCEE, and consequently, different college majors. While it is not impossible to change major in college, it can be very hard, and a lot of restrictions may apply. Although all students take the same courses prior to second year high school, a gender gap clearly exists: significantly more males choose the math and sciences track than females do, and consequently more males major in CS in college than females do. In 2015, 98% of “Computer Science and Technology” undergraduate majors chose the math and sciences track in high school, and only 33% of the major were female. Yet overall, it is a very popular major, having more than 100,000 graduates that year <a href="/bib/?entry=edepart2015">(The Education Department 2015)</a>.
+</p>
+<p><img src="images/NCEEdata.png" alt="NCEE data" id = "img2"/></p>
+<p class = "caption"><a href="/bib/?entry=edepart2015">Statistics of the “Computer Science and Technology” undergraduate major (The Education Department 2015)</a></p>
+
+<br>
+<h2>Reflecting History</h2>
+<br>
+<p class="previous"><a href="/history_chn">For more information on history, see History: China</a></p>
+<p>
+Overall, Chinese students’ access to high school CS education has gradually increased since the first movement started in 1984. The CNOI, founded in 1984, is accessible to only a few, and often more privileged, students. Yet the IT curriculum standard established in 2003 made IT education a requirement for every student across the nation. In the society, too, IT became more adopted, and “information culture” gradually shifted from “elite culture” to “popular culture.” <a href="/bib/?entry=zhu">(Zhu & Li 2005)</a> More and more families brought computers, to the extend that the IT curriculum standard became outdated because it assumes little computer background.
+</p>
+<h2 class = "readMore" id = "readMore3">Read More &nbsp &nbsp &nbsp<img class="downArrow" src = '/images/arrows.png'/></h2>
+<div class = "moreText" id = "text3">
+<p>
+Yet the struggle between exam-oriented education and quality-oriented education has been present ever since the notion of quality-oriented education took center stage in the Outline in 1993. The CNOI is seen as mostly exam-oriented. Although the IT curriculum is articulated as part of quality-oriented education, it struggles with pressure from the long established tradition and the dominant school culture of exam-oriented education. Because schools see the NCEE as highly important and prioritize resources to prepare students for the NCEE, the IT curriculum has been constantly marginalized. Moreover, the IT curriculum itself can become exam-oriented too. The majority of IT teachers thought that assessment criteria in the High School Graduation Exam does not match with the goals described in the IT curriculum standard, yet when facing pressures to prepare students for the exam, many teachers looked at the assessment criteria rather than the curriculum standard to structure their courses <a href="/bib/?entry=xiao2014">(Xiao, Guo, Fan & Huang 2014)</a>.
+</p>
+</div>
+<h2 class = "showLess" id = "showLess3">Show Less &nbsp &nbsp &nbsp<img class="upArrow" src = '/images/arrows.png'/></h2>
+<br>
+
+<br>
+<h1>Accross the Globe</h1>
+<br>
+<a class = "next" href="/current_us"><h2>Current: U.S. &nbsp &nbsp &nbsp &nbsp<img class="arrow" src = '/images/arrows.png'/></h2>
+<br>
+<p>
+Why teach CS to high school students? Currently in the U.S., government, industry, academia, and non-profits each carry a slightly different motivation.
+</p></a>
+<br>
+<h1>Next</h1>
+<br>
+<a class = "next" href="/comp"><h2>Comparison &nbsp &nbsp &nbsp &nbsp<img class="arrow" src = '/images/arrows.png'/></h2>
+<br>
+<p>
+For the U.S., the main motivation for high school CS education is industrial demands. For China, the main motivation is to prepare students to be qualified citizens of the information age.
+</p></a>
+
+</div>
+</div>
+
+<% include partials/footer.ejs %>
+
+<script src = "partials/jquery-3.2.1.js"></script>
+<script src = "partials/script.js"></script>
+</body>
+</html>

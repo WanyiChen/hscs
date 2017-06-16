@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<% include partials/head.ejs %>
+
+<style>
+#img1, #img2{
+  width: 80%;
+}
+@media only screen and (max-width: 750px) {
+  #img1, #img2{
+    width: 95%;
+  }
+}
+</style>
+
+<body>
+<% include partials/header.ejs %>
+<% include partials/menu.ejs %>
+
+<div class="main">
+<div class = "content">
+<br>
+<h1>Current Situation: U.S.</h1>
+<br>
+
+<h2>Understanding Motivations</h2>
+<br>
+<p>
+Why teach CS to high school students? Currently in the U.S., government, industry (e.g. Google and Association for Computing Machinery (ACM)), academia, and non-profits (e.g. Code.org and Girls Who Code) each claim a slightly different motivations.
+</p>
+<h2 class = "readMore" id = "readMore1">Read More &nbsp &nbsp &nbsp<img class="downArrow" src = '/images/arrows.png'/></h2>
+<div class = "moreText" id = "text1">
+<p>
+The government articulates CS with national competitiveness and defense, "Providing access to CS is a critical step for ensuring that our nation remains competitive in the global economy and strengthens its cybersecurity." <a href="/bib/?entry=whitehouse">(The White House 2016)</a> The industry want to have a steady supply of programmers, "underscoring the increasing demand for people with computer science skills in the labor market." <a href="/bib/?entry=google2015">(Google 2015)</a> On the other hand, the academia advocates the academic and everyday value of CS more. Carnegie Mellon University's CS professor Jeanette Wing claims that computer science is influencing and even innovating every discipline, and that computational thinking is beneficial "for everyone, everywhere," even for choosing which line to stand in supermarkets <a href="/bib/?entry=wing">(Wing 2006)</a>. Skills gained in learning CS are "proven to bolster [students'] success in higher education academic pursuits" as well <a href="/bib/?entry=acm">(ACM & CSTA 2010)</a>. Meanwhile, dedicated to social justice, the non-profits want every student to have a fair chance of success in the new economy, especially traditionally underrepresented groups in tech, such as females and underrepresented racial minorities (URMs). Here tech is seen as an embodiment of the American Dream. As the co-founder of Code.org asserts, "It is a fundamental American ideal – and an ideal people worldwide aspire to – that access to education and opportunity should be equal for all. It seems un-American to accept that computer science classes are only available to the privileged few." <a href="/bib/?entry=partovi">(Partovi 2014)</a>
+</p>
+<p>
+However, overall the industry motivation is the dominant motivation: government, industry, academia and non-profits all see that teaching computer science in high school will expose students to "a field that drives innovation and in which job prospects remain strong," <a href="/bib/?entry=acm">(ACM & CSTA 2010)</a> constantly citing alarming statistics to stress the importance. For example:
+</p>
+<ul>
+  <li>"Last year, there were over 600,000 tech jobs open across the United States... The Federal government alone needs an additional 10,000 IT and cybersecurity professionals, and the private sector needs many more." <a href="/bib/?entry=whitehouse">(The White House 2016)</a></li>
+  <li>"By 2020, there will be 1.4 million jobs available in computing related fields. US graduates are on track to fill 29% of those jobs. Women are on track to fill just 3%." <a href="/bib/?entry=gwc">(Girls Who Code 2016)</a></li>
+  <li>"[T]he U.S. Bureau of Labor Statistics (BLS) estimates that jobs in computer and mathematical occupations will increase by 18% in the 10 years leading up to 2022, creating more than 1.3 million job openings by 2022." <a href="/bib/?entry=google2015">(Google 2015)</a></li>
+</ul>
+<p>
+Yet these statistics vary, and factors like different definitions of “computing related fields” affect the shaping of these statistics. Moreover, some argue that the shortage of STEM (Science, Technology, Engineering, Mathematics) workers is a myth, and powerful forces are maintaining the myth: companies want an oversupply of STEM workers so that they can pay them lower wages <a href="/bib/?entry=charette">(Charette 2013)</a>. Some also see that the constant anxiety towards the mythical STEM-worker shortage creates “alarm, boom, bust” cycles of the STEM industry: by constantly drawing more students to be STEM workers, the economy builds up a bubble, and when the bubble busts, students turn to other fields of study, thus creating another round of STEM-worker shortage alarm <a href="/bib/?entry=teitelbaum">(Teitelbaum 2014)</a>. As seen in the previous section, the historical data of newly declared Computer Science/Computer Engineering undergraduate majors follows this pattern: the number of majors closely correlates with the booms and busts of the IT industry.
+</p>
+<p>
+While whether the STEM-worker shortage is truly a myth is debatable, the situation poses some more fundamental questions to practitioners in CS education for high school students. Education does not equal vocational training, so how should high school CS classes encourage and prepare students for career planning in tech jobs? Or, more broadly, to what extent should high school education be motivated by demands in job markets?
+</p>
+</div>
+<h2 class = "showLess" id = "showLess1">Show Less &nbsp &nbsp &nbsp<img class="upArrow" src = '/images/arrows.png'/></h2>
+
+<br>
+<h2>Taking Actions</h2>
+<br>
+<p><img src="images/obama.jpg" alt="Obama" id = "img1"/></p>
+<p class = "caption"><a href = "https://obamawhitehouse.archives.gov/blog/2016/01/30/computer-science-all" target="_blank">President Obama Launching CS for All Initiative</a></p>
+<p>
+Government, industry, academia, and non-profits play different roles in high school CS education, and sometimes they form partnerships. Government and industry provides the majority of the funding. In additional to providing regular public school funding, in 2016 President Obama launched the “CS for All” initiative, granting a lot more funds for educating every student about CS <a href="/bib/?entry=whitehouse">(the White House 2016)</a>. Meanwhile, large industry donors support many non-profits aiming at expending CS education. While all are engaged, the academia plays an important role in research, studying the current situation, developing new curriculums, and evaluating programs.
+</p>
+<h2 class = "readMore" id = "readMore2">Read More &nbsp &nbsp &nbsp<img class="downArrow" src = '/images/arrows.png'/></h2>
+<div class = "moreText" id = "text2">
+<p>
+The high schools themselves do the majority of teaching. For students that have learned CS in high school, 73% learned it in a class at school <a href="/bib/?entry=google2015">(Google 2015)</a>. In addition, non-profits and industries offer afterschool clubs and/or summer programs. In the case of Girls Who Code, the non-profit forms partnerships with various industry leaders to provide the Summer Immersion Program, where 10th-11th grade girls learn to code on site in tech companies. Teaching takes many forms, but the instruction is mainly organized in three ways: full curriculum, integrated curriculum, and outreach activity. Each approach has its pros and cons.
+</p>
+<p>
+Full curriculum is a full course dedicated to teaching CS principles. Currently 78% of high schools (highest grade is 9th or higher) offer at least one full-curriculum CS course, and of all K-12 schools that offer CS courses, 40% of these course involve programming, an important part of CS <a href="/bib/?entry=google2016">(Google 2016)</a> Full curriculum gives students the most comprehensive knowledge framework and the most amount of exposure to CS, but it requires the most resources (to hire specialized CS teachers, etc.), so it is the hardest to implement.
+</p>
+<p>
+Integrated curriculum integrates some CS principles into other existing courses, usually math or sciences. For instance, a math course can have a unit on algorithms and pseudo codes. Currently 39% of K-12 schools teach CS as part of other course <a href="/bib/?entry=google2016">(Google 2016)</a>. Since this approach utilizes existing resources, it costs relatively low to reach out to a lot of students, and it gives students a medium amount of exposure to CS. However, one downside is that students may not think of the integrated CS principles as CS if not being explicitly instructed so. For example, students may think of writing pseudo codes as just another way to do math problems, not as a foundation for CS.
+</p>
+<p>
+Outreach activity is a one-time activity that just seeks to spark students’ interests in CS. Examples are Code.org’s Hour of Code activity, which just takes about an hour to complete, and CS Unplugged activities, which teach one CS principle at a time through an activity that does not require computers. Outreach activities are usually fun and do not cost a lot, so they are the easiest to implement, but it is hard for students to learn a substantial amount through just one activity. To amend the downside and still take advantage of the fun these activities generate, some have integrated outreach activities into full curriculums or integrated curriculums.
+</p>
+</div>
+<h2 class = "showLess" id = "showLess2">Show Less &nbsp &nbsp &nbsp<img class="upArrow" src = '/images/arrows.png'/></h2>
+
+<br>
+<h2>Overcoming challenges</h2>
+<br>
+<p>
+First of all, despite the <a href="https://www.csteachers.org/?page=CSTA_Standards" target="_blank">curriculum standard and guidance</a> offered by ACM and CSTA, there is still limited understanding in when to teach which concept, and which teaching methods are most effective. Indeed a lot of effort has been put into developing curriculums that best fit high school students’ interest. In a case study in Los Angeles Unified School District, researchers found that AP CS may be too difficult for high school students with no prior experience, and there existed no good alternative, so they took up the burden to develop a new full curriculum entitled Exploring Computer Science. While they wished that their curriculum could serve as a model nationwide, they also recognized that part of the curriculum was unique to the school district, thus researches in other school districts would need to do further research and modify the curriculum to best fit the students’ interest <a href="/bib/?entry=goode">(Goode & Margolis 2011)</a>.
+</p>
+<h2 class = "readMore" id = "readMore3">Read More &nbsp &nbsp &nbsp<img class="downArrow" src = '/images/arrows.png'/></h2>
+<div class = "moreText" id = "text3">
+<p>
+Yet the lack of resources is the main challenge for providing and expanding access to high school CS education. For high schools that do not offer CS courses, lack of available CS teachers, lack of room for CS in the already packed curriculum, and lack of funding are some of the top reasons that prevent them from offering CS <a href="/bib/?entry=google2016">(Google 2016)</a>. Discrepancies of resources can put students with lower socioeconomic status at disadvantages, and often those students are black of Hispanic. To ensure that enough resources get allocated to high school CS education, ACM & CSTA argue that CS should be offered as rigorous full curriculum academic courses, not as vocational training courses, which is the case with many schools currently. Moreover, CS courses should be able to count towards high school graduation requirements; they should not be just another elective course that does not count, which is also the current case with many schools<a href="/bib/?entry=acm">(ACM & CSTA 2010)</a>. Once the priority for CS courses is set through academic rigor and graduation requirements, more resources will follow up more easily.
+</p>
+<p>
+Lastly, there is limited student participation, especially during the years of low undergraduate enrollment in CS programs. Many researches have been done in order to understand why CS is not attractive to many high school students. Some studies have shown that students may perceive CS as boring, asocial, tedious, and irrelevant to their lives <a href="/bib/?entry=yardi">(Yardi & Bruckman 2007)</a>. Various efforts have been made to alter students’ negative perceptions of CS. For instance, researchers at Georgia Computes tried to create an “Introduction to HCI (Human-Computer Interaction) for Teenagers” curriculum to introduce the more socially relevant part of CS as well as connecting teenagers to graduate students in HCI, who tended to perceive CS as exciting, social, and meaningful <a href="/bib/?entry=yardi">(Yardi & Bruckman 2007)</a>. Other researchers approached this problem by providing professional development trainings for CS teachers in hope that their teaching methods would become more inquiry based <a href="/bib/?entry=goode">(Goode & Margolis 2011)</a>. Yet others came up with fun outreach activities such as CS Unplugged that seek to give students a taste of the excitement of CS without having them to dive into the intimidating syntax of programming first <a href="/bib/?entry=bell">(Bell, Alexander, Freeman, & Grimley 2009)</a>.
+</p>
+<p>
+Moreover, while the overall participation was limited, participation among females, blacks, and Hispanics were especially limited. For instance, in 2013 of all AP CS test takers, only 19% were female, 9% were Hispanic/Latino, and 4.2% were African American <a href="/bib/?entry=cb">(College Board 2014)</a>. One reason is that females and URMs may be intimidated by strong stereotypes of most programmers being white or Asian males; few students see females, Blacks, and Hispanics perform computer science roles on TV or in films <a href="/bib/?entry=google2015">(Google 2015)</a>. Various efforts have been made to change this situation too. Notable non-profits such as Girls Who Code provide programs specific to females and URMs to connect them to peers and role models. In additions, companies can change hiring practices and create more inclusive working environments for female and URM programmers.
+</p>
+<p><img src="images/APCS.png" alt="AP CS data" id = "img2"/></p>
+<p class = "caption"><a href = "http://media.collegeboard.com/digitalServices/pdf/ap/rtn/10th-annual/10th-annual-ap-report-subject-supplement-computer-science-a.pdf" target="_blank">Demographics of AP Computer Science A exam takers, Class of 2013
+(College Board 2014)
+</a></p>
+</div>
+<h2 class = "showLess" id = "showLess3">Show Less &nbsp &nbsp &nbsp<img class="upArrow" src = '/images/arrows.png'/></h2>
+<br>
+<h2>Reflecting History</h2>
+<br>
+<p class="previous"><a href="/history_us">For more information on history, see History: U.S.</a></p>
+<p>
+Overtime, both the context and articulations of CS education has shifted. In Seymour Papert’s time, personal computers have just entered the market, while today digital technologies have touched every part of daily lives, and the industry is still growing fast. In Papert’s time, computers were used more as an educational tool to teach other subjects and programming was seen more as an alternative way to explore other subjects, while today knowledge of computer science itself is becoming increasingly important.
+</p>
+<h2 class = "readMore" id = "readMore4">Read More &nbsp &nbsp &nbsp<img class="downArrow" src = '/images/arrows.png'/></h2>
+<div class = "moreText" id = "text4">
+<p>
+Yet a few themes persist. CS has been associated with creativity throughout. With LOGO, students were encouraged to make creative drawings using mathematical concepts <a href="/bib/?entry=papert1991">(Papert & Harel 1991)</a>. In 2007, Scratch, a new programming language primarily used by children and teenagers, was launched. Scratch encourages people to use programming as a creative medium, and it supports a platform for the online community to share and remix each other’s creative projects <a href="/bib/?entry=resnick">(Resnick et al. 2009)</a>. Creativity has been identified as an important component of computational thinking as well. Two of the “seven ‘big ideas’” of computing identified by the College Board and the National Science Foundation are “computing is a creative human activity” and “programming is a creative process that produces computational artifacts.” <a href="/bib/?entry=grover">(Grover & Pea 2013)</a>
+</p>
+<p>
+However, time and again CS education has faced tensions with assessments, especially when educators try to move beyond testing basic concepts and skills to assess higher-order thinking/computational thinking. Unlike problems that just have “one correct answer”, problems involving creativity are a lot harder to assess. Seymour Papert critiqued some assessment methods for being “technocentric”: by just trying to assess the effect of programming tools, important human aspects such as teaching methods and school culture were largely ignored <a href="/bib/?entry=papert1987">(Papert 1987)</a>. Yet, some assessment criteria must be developed in order for schools to adapt CS education more widely. Today, professional organizations such as ACM and CSTA as well as non-profits such as the College Board have tried to establish assessment standards and guidelines. While many assessments are still based on standardized tests, some have taken a more project-based approach. For instance, AP Computer Science Principles, the newest form of AP CS exam beginning 2016-17 academic year, incorporates computational thinking concepts and takes student projects as part of the assessment <a href="/bib/?entry=cb">(College Board 2016)</a>.
+</p>
+</div>
+<h2 class = "showLess" id = "showLess4">Show Less &nbsp &nbsp &nbsp<img class="upArrow" src = '/images/arrows.png'/></h2>
+<br>
+
+<br>
+<h1>Across the Globe</h1>
+<br>
+<a class = "next" href="/current_chn"><h2>Current: China &nbsp &nbsp &nbsp &nbsp<img class="arrow" src = '/images/arrows.png'/></h2>
+<br>
+<p>
+China has a national curriculum standard, allowing only controlled degrees of regional variations. In high schools, the IT curriculum has a "1+5" structure.
+</p></a>
+<br>
+<h1>Next</h1>
+<br>
+<a class = "next" href="/comp"><h2>Comparison &nbsp &nbsp &nbsp &nbsp<img class="arrow" src = '/images/arrows.png'/></h2>
+<br>
+<p>
+For the U.S., the main motivation for high school CS education is industrial demands. For China, the main motivation is to prepare students to be qualified citizens of the information age.
+</p></a>
+</div>
+</div>
+
+<% include partials/footer.ejs %>
+
+<script src = "partials/jquery-3.2.1.js"></script>
+<script src = "partials/script.js"></script>
+</body>
+</html>

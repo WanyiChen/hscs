@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<% include partials/head.ejs %>
+
+<body>
+<% include partials/header.ejs %>
+<% include partials/menu.ejs %>
+
+<div class="main">
+<div class = "content">
+
+<% include form.ejs %>
+
+<% include resources/what_is_cs.ejs %>
+<% include resources/free_resources_us.ejs %>
+<% include resources/nonprofits.ejs %>
+
+</div>
+</div>
+
+<% include partials/footer.ejs %>
+
+<script src = "partials/jquery-3.2.1.js"></script>
+<script src = "partials/script.js"></script>
+<script>
+$("#role").val("other");
+$("#country").val("us");
+</script>
+
+</body>
+</html>
