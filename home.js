@@ -1,9 +1,9 @@
 //setting up
 var express = require('express');
 var app = express();
-//var bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 app.use(express.static('file'));
-//app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine','ejs');
 app.set('views','file');
 
