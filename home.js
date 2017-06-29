@@ -2,6 +2,9 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+var sqlite3 = require('sqlite3').verbose();
+var db = new sqlite3.Database(':memory:');
+
 app.use(express.static('file'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine','ejs');
@@ -9,47 +12,113 @@ app.set('views','file');
 
 //routing
 app.get('/', function (req, res) {
-  res.render('intro');
+  db.each('SELECT * FROM table1', function(err, row) {
+    if (err === null) {
+      res.render('intro', {role : row.role, country : row.country});
+    } else {
+      throw err;
+    }
+  });
 });
 
 app.get('/history_us', function (req, res) {
-  res.render('history_us');
+  db.each('SELECT * FROM table1', function(err, row) {
+    if (err === null) {
+      res.render('history_us', {role : row.role, country : row.country});
+    } else {
+      throw err;
+    }
+  });
 });
 
 app.get('/history_chn', function (req, res) {
-  res.render('history_chn');
+  db.each('SELECT * FROM table1', function(err, row) {
+    if (err === null) {
+      res.render('history_chn', {role : row.role, country : row.country});
+    } else {
+      throw err;
+    }
+  });
 });
 
 app.get('/current_us', function (req, res) {
-  res.render('current_us');
+  db.each('SELECT * FROM table1', function(err, row) {
+    if (err === null) {
+      res.render('current_us', {role : row.role, country : row.country});
+    } else {
+      throw err;
+    }
+  });
 });
 
 app.get('/current_chn', function (req, res) {
-  res.render('current_chn');
+  db.each('SELECT * FROM table1', function(err, row) {
+    if (err === null) {
+      res.render('current_chn', {role : row.role, country : row.country});
+    } else {
+      throw err;
+    }
+  });
 });
 
 app.get('/comp', function (req, res) {
-  res.render('comp');
+  db.each('SELECT * FROM table1', function(err, row) {
+    if (err === null) {
+      res.render('comp', {role : row.role, country : row.country});
+    } else {
+      throw err;
+    }
+  });
 });
 
 app.get('/forward_us', function (req, res) {
-  res.render('forward_us');
+  db.each('SELECT * FROM table1', function(err, row) {
+    if (err === null) {
+      res.render('forward_us', {role : row.role, country : row.country});
+    } else {
+      throw err;
+    }
+  });
 });
 
 app.get('/forward_chn', function (req, res) {
-  res.render('forward_chn');
+  db.each('SELECT * FROM table1', function(err, row) {
+    if (err === null) {
+      res.render('forward_chn', {role : row.role, country : row.country});
+    } else {
+      throw err;
+    }
+  });
 });
 
 app.get('/conclusion', function (req, res) {
-  res.render('conclusion');
+  db.each('SELECT * FROM table1', function(err, row) {
+    if (err === null) {
+      res.render('conclusion', {role : row.role, country : row.country});
+    } else {
+      throw err;
+    }
+  });
 });
 
 app.get('/bib', function (req, res) {
-  res.render('bib');
+  db.each('SELECT * FROM table1', function(err, row) {
+    if (err === null) {
+      res.render('bib', {role : row.role, country : row.country});
+    } else {
+      throw err;
+    }
+  });
 });
 
 app.get('/about', function (req, res) {
-  res.render('about');
+  db.each('SELECT * FROM table1', function(err, row) {
+    if (err === null) {
+      res.render('about', {role : row.role, country : row.country});
+    } else {
+      throw err;
+    }
+  });
 });
 
 app.get('/explore', function (req, res) {
@@ -59,6 +128,19 @@ app.get('/explore', function (req, res) {
 app.post('/explore', function (req, res) {
   var role = req.body.role;
   var country = req.body.country;
+
+  db.run("UPDATE table1 " +
+        "SET role = ?, country = ?",
+        [role,country]);
+
+    db.each('SELECT role FROM table1', function(err, row) {
+      if (err === null) {
+        console.log(row.role);
+      } else {
+        throw err;
+      }
+    });
+
   if (country == "us"){
     if (role == "student"){
       res.render('us_student');
@@ -80,6 +162,14 @@ app.post('/explore', function (req, res) {
       res.render('chn_other');
     }
   }
+});
+
+//initializing database
+db.serialize(function () {
+  db.run('CREATE TABLE table1 (role TEXT, country TEXT)');
+  db.run('INSERT INTO table1 (role, country) VALUES (?, ?)',
+    ['student', 'us']);
+  console.log('Table created!');
 });
 
 //listening on port

@@ -63,12 +63,15 @@ border: 15px solid #72c8fe;
 top: 0;
 border-top: 20px solid #014976;
 border-bottom: 20px solid #014976;
-width: 16%;
+width: 230px;
 text-align: center;
 font-size: 1.3em;
 color: white;
 background-color:#014976;
 float: left;
+}
+.menu ul{
+list-style-type: none;
 }
 .menu li{
 padding-top: 5px;
@@ -94,10 +97,6 @@ border-bottom: 5px solid #014976;
 color: #014976;
 background-color: #feac45;
 }
-#explore:hover{
-color: white;
-background-color: #72c8fe;
-}
 #bib p{
 text-indent: 0px;
 }
@@ -122,7 +121,7 @@ display: inline;
 /* content */
 .content{
 float: left;
-width: 700px;
+width: 680px;
 margin-left: 15%;
 }
 .content p, .content ul{
@@ -267,14 +266,16 @@ color: white;
 
 /* explore further form */
 form{
-font-size: 1.1em;
+font-size: 1em;
+text-align: center;
 line-height: 200%;
 }
 button{
 font-size: 0.9em;
 color: white;
 border-radius: 10px;
-padding: 5px;
+margin-top: 15px;
+padding: 6px;
 background-color: #014976;
 }
 button:hover{
@@ -282,28 +283,32 @@ cursor: pointer;
 background-color: #72c8fe;
 }
 .dropdown{
-display: inline;
+//display: inline;
 }
 .dropdown select{
-background-color: #72c8fe;
+background-color: #014976;
+color: white;
 border: none;
 font-size: 18px;
 height: 29px;
 padding: 5px;
 }
 #role{
-width: 230px;
+width: 210px;
 }
 #country{
-width: 150px;
+width: 110px;
 }
 
 /*About tablet width*/
-@media only screen and (max-width: 1200px) {
-    .content{
-      width: 80%;
-      margin-left: 10%;
-    }
+@media only screen and (max-width: 1150px) {
+  .main{
+    width: 69%;
+  }
+  .content{
+    padding-right: 5%;
+    width: auto;
+  }
     h3{
       background-position: 65% center;
     }
@@ -313,6 +318,9 @@ width: 150px;
 @media only screen and (max-width: 750px) {
     .header{
       font-size: 150%;
+    }
+    #headerText{
+    border: 7px solid #72c8fe;
     }
     #hambuger {
      display: block;
@@ -336,7 +344,9 @@ width: 150px;
     .content{
       width: 98%;
       border: none;
+      margin-top: 5%;
       margin-left: 0%;
+      padding-left: 0%;
     }
     .main{
       width: auto;
