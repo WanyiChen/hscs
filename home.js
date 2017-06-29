@@ -133,14 +133,6 @@ app.post('/explore', function (req, res) {
         "SET role = ?, country = ?",
         [role,country]);
 
-    db.each('SELECT role FROM table1', function(err, row) {
-      if (err === null) {
-        console.log(row.role);
-      } else {
-        throw err;
-      }
-    });
-
   if (country == "us"){
     if (role == "student"){
       res.render('us_student');
