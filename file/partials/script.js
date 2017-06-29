@@ -94,11 +94,6 @@ function moreLess(heading1, text, heading2){
 
   }
 
-<<<<<<< HEAD
-//});
-=======
-});
-
 //google analytics
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -107,4 +102,3 @@ function moreLess(heading1, text, heading2){
 
   ga('create', 'UA-101211276-1', 'auto');
   ga('send', 'pageview');
->>>>>>> 83d07d70fe41098789e7e37defd9fec4c6503a6a
