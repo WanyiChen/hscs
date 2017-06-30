@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "home.js",
+  "ignoreNodeModules": true,
   "scripts": {
     "start": "nodemon home.js",
     "test": "echo \"Error: no test specified\" && exit 1"
